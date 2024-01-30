@@ -928,7 +928,7 @@ by faceting are accessible in the object returned by ``plot``:
         col="time",
         subplot_kws={"projection": ccrs.Orthographic(-80, 35)},
     )
-    for ax in p.axs.flat:
+    for ax in p.axes.flat:
         ax.coastlines()
         ax.gridlines()
     @savefig plotting_maps_cartopy_facetting.png width=100%
